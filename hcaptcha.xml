@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="captcha" method="upgrade">
+	<name>plg_captcha_hcaptcha</name>
+	<version>1.0.0</version>
+	<creationDate>April 2020</creationDate>
+	<author>Peter Martin</author>
+	<authorEmail>support@db8.eu</authorEmail>
+	<authorUrl>https://db8.eu</authorUrl>
+	<copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="hcaptcha">hcaptcha.php</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="publicKey"
+					type="text"
+					label="PLG_HCAPTCHA_PUBLIC_KEY"
+					description="PLG_HCAPTCHA_PUBLIC_KEY_DESC"
+					default=""
+					required="true"
+					filter="string"
+					size="100"
+					class="input-xxlarge"
+				/>
+
+				<field
+					name="privateKey"
+					type="text"
+					label="PLG_HCAPTCHA_PRIVATE_KEY"
+					description="PLG_HCAPTCHA_PRIVATE_KEY_DESC"
+					default=""
+					required="true"
+					filter="string"
+					size="100"
+					class="input-xxlarge"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="hCaptcha Update Site">https://raw.githubusercontent.com/pe7er/hCaptcha/master/update.xml</server>
+	</updateservers>
+
+</extension>
