@@ -19,3 +19,24 @@ Have you found an issue in this software or do you have an question?
 ## Improvements
 Would you like to contribute improvements to this code?
 Please submit a pull request with the proposed changes against the master branch.
+
+## Changelog
+
+xx-xxx-2020 : v1.1.0
+<ul>
+<li>$ Added Dutch nl-NL language File</li>
+<li>$ Added Polish pl-PL language File</li>
+<li>+ Added theme selection (Light, Dark, Compact)</li>
+</ul>
+
+
+20-Apr-2020 : v1.0.0
+<ul>
+<li>+ Added Update server URL</li>
+</ul>
+
+10-Apr-2020 : v1.0.0-RC1
+<ul>
+<li>$ Added English en-GB language File</li>
+<li>+ Added ACL check to Dashboard + Profiles view</li>
+</ul>

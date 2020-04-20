@@ -41,6 +41,18 @@
 					class="input-xxlarge"
 				/>
 
+				<field
+					name="theme"
+					type="list"
+					label="PLG_HCAPTCHA_THEME"
+					default="light"
+					filter=""
+				>
+					<option value="light">PLG_HCAPTCHA_THEME_LIGHT</option>
+					<option value="dark">PLG_HCAPTCHA_THEME_DARK</option>
+					<option value="compact">PLG_HCAPTCHA_THEME_COMPACT</option>
+				</field>
+
 			</fieldset>
 		</fields>
 	</config>
