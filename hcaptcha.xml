@@ -47,8 +47,6 @@
 
 	<updateservers>
 		<server type="extension" priority="1" name="plg_captcha_hcaptcha">https://data2site.com/index.php?option=com_rdsubs&amp;view=updater&amp;format=xml&amp;element=plg_captcha_hcaptcha</server>
-
-		<server type="extension" name="hCaptcha Update Site">https://raw.githubusercontent.com/pe7er/hCaptcha/master/update.xml</server>
 	</updateservers>
 
 </extension>
