@@ -3,10 +3,10 @@
 	<name>plg_captcha_hcaptcha</name>
 	<version>1.0.0</version>
 	<creationDate>April 2020</creationDate>
-	<author>Peter Martin</author>
-	<authorEmail>support@db8.eu</authorEmail>
-	<authorUrl>https://db8.eu</authorUrl>
-	<copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
+	<author>data2site</author>
+	<authorEmail>support@data2site.com</authorEmail>
+	<authorUrl>https://data2site.com</authorUrl>
+	<copyright>Copyright (C) 2020 by data2site. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
 	<files>
@@ -46,6 +46,8 @@
 	</config>
 
 	<updateservers>
+		<server type="extension" priority="1" name="plg_captcha_hcaptcha">https://data2site.com/index.php?option=com_rdsubs&amp;view=updater&amp;format=xml&amp;element=plg_captcha_hcaptcha</server>
+
 		<server type="extension" name="hCaptcha Update Site">https://raw.githubusercontent.com/pe7er/hCaptcha/master/update.xml</server>
 	</updateservers>
 
