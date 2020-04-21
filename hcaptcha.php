@@ -74,6 +74,7 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		$ele->setAttribute('class', 'h-captcha');
 		$ele->setAttribute('data-sitekey', $this->params->get('publicKey', ''));
 		$ele->setAttribute('data-theme', $this->params->get('theme', 'light'));
+		$ele->setAttribute('data-size', $this->params->get('size', 'normal'));
 
 		$dom->appendChild($ele);
 

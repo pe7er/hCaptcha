@@ -45,12 +45,24 @@
 					name="theme"
 					type="list"
 					label="PLG_HCAPTCHA_THEME"
+					description="PLG_HCAPTCHA_THEME_DESC"
 					default="light"
-					filter=""
+					filter="string"
 				>
 					<option value="light">PLG_HCAPTCHA_THEME_LIGHT</option>
 					<option value="dark">PLG_HCAPTCHA_THEME_DARK</option>
-					<option value="compact">PLG_HCAPTCHA_THEME_COMPACT</option>
+				</field>
+
+				<field
+					name="size"
+					type="list"
+					label="PLG_HCAPTCHA_SIZE"
+					description="PLG_HCAPTCHA_SIZE_DESC"
+					default="normal"
+					filter="string"
+				>
+					<option value="normal">PLG_HCAPTCHA_SIZE_NORMAL</option>
+					<option value="compact">PLG_HCAPTCHA_SIZE_COMPACT</option>
 				</field>
 
 			</fieldset>
