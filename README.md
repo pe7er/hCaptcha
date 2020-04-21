@@ -42,7 +42,7 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
-xx-xxx-2020 : v1.1.0
+21-Apr-2020 : v1.1.0
 <ul>
 <li>$ Added Dutch nl-NL language File</li>
 <li>$ Added Polish pl-PL language File</li>
