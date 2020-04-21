@@ -26,9 +26,10 @@ has been configured properly and works correctly.
 
 ## Translations
 This plugin has been translated into the following languages:
-- en-GB by @pe7er
-- nl-NL by @pe7er
-- pl-PL by @mhajder
+- Dutch (nl-NL) by Peter Martin ([@pe7er](https://github.com/pe7er))
+- French (fr-FR) by Yannick Berges ([@micker](https://github.com/micker))
+- English (en-GB) by Peter Martin ([@pe7er](https://github.com/pe7er))
+- Polish (pl-PL) by Mateusz Hajder ([@mhajder](https://github.com/mhajder))
  
 Would you like to contribute a translation for an additional language? Feel free to create a Pull Request against the master branch.
 
@@ -42,10 +43,16 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
+xx-Xxxr-2020 : v1.1.0
+<ul>
+<li>$ Added French fr-FR language File (@micker)</li>
+</ul>
+
+
 21-Apr-2020 : v1.1.0
 <ul>
-<li>$ Added Dutch nl-NL language File</li>
-<li>$ Added Polish pl-PL language File</li>
+<li>$ Added Dutch nl-NL language File (@pe7er)</li>
+<li>$ Added Polish pl-PL language File (@mhajder)</li>
 <li>+ Added Theme configuration: Light / Dark</li>
 <li>+ Added Size configuration: Normal / Compact</li>
 </ul>
@@ -57,6 +64,6 @@ Please submit a pull request with the proposed changes against the master branch
 
 10-Apr-2020 : v1.0.0-RC1
 <ul>
-<li>$ Added English en-GB language File</li>
+<li>$ Added English en-GB language File (@pe7er)</li>
 <li>+ Added ACL check to Dashboard + Profiles view</li>
 </ul>
