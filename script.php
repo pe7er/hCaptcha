@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Plugin
- * @subpackage  Captcha
+ * @subpackage  captcha.hcaptcha
  *
  * @author      Peter Martin
  * @copyright   Copyright 2016-2017 Peter Martin. All rights reserved.
