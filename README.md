@@ -28,6 +28,7 @@ has been configured properly and works correctly.
 This plugin has been translated into the following languages:
 - Dutch (nl-NL) by Peter Martin ([@pe7er](https://github.com/pe7er))
 - French (fr-FR) by Yannick Berges ([@micker](https://github.com/micker))
+- German (de-DE) by Tobias Zulauf ([@zero-24](https://github.com/zero-24))
 - English (en-GB) by Peter Martin ([@pe7er](https://github.com/pe7er))
 - Polish (pl-PL) by Mateusz Hajder ([@mhajder](https://github.com/mhajder))
  
@@ -47,6 +48,9 @@ Please submit a pull request with the proposed changes against the master branch
 Next release
 <ul>
 <li>$ Added French fr-FR language File (@micker)</li>
+<li>$ Added Germany de-DE language File (@zero-24)</li>
+<li>+ Added PHP 7.0 minimum check (@zero-24)</li>
+<li>+ Added privacy message about IP beeing send to hcaptcha.com (@zero-24)</li>
 </ul>
 
 
