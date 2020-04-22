@@ -1,9 +1,12 @@
 <?php
 /**
- * HttpHeader Plugin
+ * @package     Joomla.Plugin
+ * @subpackage  Captcha
  *
- * @copyright  Copyright (C) 2017 - 2019 Tobias Zulauf All rights reserved.
- * @license    http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
+ * @author      Peter Martin
+ * @copyright   Copyright 2016-2017 Peter Martin. All rights reserved.
+ * @license     GNU General Public License version 2 or later
+ * @link        https://db8.eu
  */
 
 defined('_JEXEC') or die;
@@ -15,7 +18,7 @@ use Joomla\CMS\Installer\InstallerScript;
  *
  * @since  1.0
  */
-class PlgSystemHttpHeaderInstallerScript extends InstallerScript
+class PlgCaptchaHcaptchaInstallerScript extends InstallerScript
 {
 	/**
 	 * Extension script constructor.
@@ -27,20 +30,5 @@ class PlgSystemHttpHeaderInstallerScript extends InstallerScript
 		// Define the minumum versions to be supported.
 		$this->minimumJoomla = '3.8';
 		$this->minimumPhp    = '7.0';
-	}
-
-	/**
-	 * Function to perform changes during postflight
-	 *
-	 * @param   string            $type    The action being performed
-	 * @param   ComponentAdapter  $parent  The class calling this method
-	 *
-	 * @return  void
-	 *
-	 * @since   1.0.1
-	 */
-	public function postflight($type, $parent)
-	{
-		$this->removeFiles();
 	}
 }
