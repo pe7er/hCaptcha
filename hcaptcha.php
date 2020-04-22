@@ -34,6 +34,24 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 	protected $autoloadLanguage = true;
 
 	/**
+	 * Reports the privacy related capabilities for this plugin to site administrators.
+	 *
+	 * @return  array
+	 *
+	 * @since   1.0.0
+	 */
+	public function onPrivacyCollectAdminCapabilities()
+	{
+		$this->loadLanguage();
+
+		return array(
+			JText::_('PLG_CAPTCHA_HCAPTCHA') => array(
+				JText::_('PLG_CAPTCHA_HCAPTCHA_PRIVACY_CAPABILITY_IP_ADDRESS'),
+			)
+		);
+	}
+	
+	/**
 	 * Initialise the captcha
 	 *
 	 * @return  boolean    True on success, false otherwise
