@@ -45,14 +45,13 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
-Next release
+22-Apr-2020 : v1.2.0
 <ul>
 <li>$ Added French fr-FR language File (@micker)</li>
 <li>$ Added Germany de-DE language File (@zero-24)</li>
 <li>+ Added PHP 7.0 minimum check (@zero-24)</li>
 <li>+ Added privacy message about IP beeing send to hcaptcha.com (@zero-24)</li>
 </ul>
-
 
 21-Apr-2020 : v1.1.0
 <ul>
