@@ -9,6 +9,7 @@
 	<copyright>Copyright (C) 2020 by data2site. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<filename plugin="hcaptcha">hcaptcha.php</filename>
 		<folder>language</folder>
