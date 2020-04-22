@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Plugin
- * @subpackage  Captcha
+ * @subpackage  captcha.hcaptcha
  *
  * @author      Peter Martin
  * @copyright   Copyright 2016-2017 Peter Martin. All rights reserved.
@@ -117,6 +117,7 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 			'&response=' . $hCaptchaResponse .
 			'&remoteip=' . $remoteIp
 		);
+
 		$responseData   = json_decode($verifyResponse);
 
 		if ($responseData->success)
