@@ -29,6 +29,6 @@ class PlgCaptchaHcaptchaInstallerScript extends InstallerScript
 	{
 		// Define the minumum versions to be supported.
 		$this->minimumJoomla = '3.8';
-		$this->minimumPhp    = '7.0';
+		$this->minimumPhp    = '7.1';
 	}
 }
