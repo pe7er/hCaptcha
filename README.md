@@ -31,6 +31,7 @@ This plugin has been translated into the following languages:
 - German (de-DE) by Tobias Zulauf ([@zero-24](https://github.com/zero-24))
 - English (en-GB) by Peter Martin ([@pe7er](https://github.com/pe7er))
 - Polish (pl-PL) by Mateusz Hajder ([@mhajder](https://github.com/mhajder))
+- Spanish (es-ES) by Peter Martin ([@pe7er](https://github.com/pe7er))
  
 Would you like to contribute a translation for an additional language?<br> 
 Feel free to create a Pull Request against the master branch.
@@ -44,6 +45,12 @@ Would you like to contribute improvements to this code?
 Please submit a pull request with the proposed changes against the master branch.
 
 ## Changelog
+
+Next release
+<ul>
+<li>$ Added Spanish es-ES language File (@pe7er)</li>
+<li># corrected minimum check to PHP 7.1 (@zero-24)</li>
+</ul>
 
 22-Apr-2020 : v1.2.0
 <ul>
