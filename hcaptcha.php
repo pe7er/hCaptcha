@@ -46,12 +46,12 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		$this->loadLanguage();
 
 		return array(
-			JText::_('PLG_CAPTCHA_HCAPTCHA') => array(
-				JText::_('PLG_CAPTCHA_HCAPTCHA_PRIVACY_CAPABILITY_IP_ADDRESS'),
+			Text::_('PLG_CAPTCHA_HCAPTCHA') => array(
+				Text::_('PLG_CAPTCHA_HCAPTCHA_PRIVACY_CAPABILITY_IP_ADDRESS'),
 			)
 		);
 	}
-	
+
 	/**
 	 * Initialise the captcha
 	 *
