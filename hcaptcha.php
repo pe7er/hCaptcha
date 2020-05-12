@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Http\HttpFactory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Utilities\IpHelper;
@@ -130,13 +131,25 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_EMPTY_SOLUTION'));
 		}
 
-		$verifyResponse = file_get_contents(
-			'https://hcaptcha.com/siteverify?secret=' . $privateKey .
-			'&response=' . $hCaptchaResponse .
-			'&remoteip=' . $remoteIp
-		);
+		try
+		{
+			$verifyResponse = HttpFactory::getHttp()->get(
+				'https://hcaptcha.com/siteverify?secret=' . $privateKey .
+				'&response=' . $hCaptchaResponse .
+				'&remoteip=' . $remoteIp
+			);
+		}
+		catch (RuntimeException $e)
+		{
+			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_CANT_CONNECT_TO_HCAPTCHA_SERVERS'));
+		}
 
-		$responseData   = json_decode($verifyResponse);
+		if ($verifyResponse->code !== 200 || empty($verifyResponse->body))
+		{
+			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_INVALID_RESPONSE'));
+		}
+
+		$responseData = json_decode($verifyResponse->body);
 
 		if ($responseData->success)
 		{
