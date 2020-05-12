@@ -50,6 +50,7 @@ Next release
 <ul>
 <li>$ Added Spanish es-ES language File (@pe7er)</li>
 <li># corrected minimum check to PHP 7.1 (@zero-24)</li>
+<li># changed file_get_contents to HttpFactory (@zero-24)</li>
 </ul>
 
 22-Apr-2020 : v1.2.0
