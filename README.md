@@ -48,6 +48,7 @@ Please submit a pull request with the proposed changes against the master branch
 
 Next release
 <ul>
+<li>$ Improved Polish pl-PL language File (@mhajder)</li>
 <li>$ Added Spanish es-ES language File (@pe7er)</li>
 <li># corrected minimum check to PHP 7.1 (@zero-24)</li>
 <li># changed file_get_contents to HttpFactory (@zero-24)</li>
