@@ -59,6 +59,11 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
+Future : v1.3.1
+<ul>
+<li>$ Changed Language Labels to keep the word the same on all places</li>
+</ul>
+
 13-Oct-2020 : v1.3.0
 <ul>
 <li>$ Changed Language Labels to follow the convention used in the Joomla 4 PR</li>
