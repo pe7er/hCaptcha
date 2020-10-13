@@ -7,6 +7,11 @@ The Plugin can be easily kept up-to-date because it uses Joomla! Update System.
 
 The latest version can be downloaded from: https://data2site.com/download/hcaptcha
 
+This hCAPTCHA plugin is only for Joomla 3.8 to 3.10.
+
+If Pull Request https://github.com/joomla/joomla-cms/pull/28798 is merged with Joomla 4, 
+then you can use hCaptcha in the Joomla 4 core.
+
 ## Instructions
 
 - [Download the latest version of hCaptcha](https://data2site.com/download/hcaptcha) 
@@ -23,6 +28,14 @@ and install using Joomla's Extension installer
     Default Captcha > Select "Captcha - hCaptcha"
 - Test your forms on the front-end of your Joomla website to see if the hCaptcha 
 has been configured properly and works correctly.
+
+## Content-Security-Policy Settings
+If you use CSP headers, please add the following to your configuration:
+```txt
+script-src should include https://hcaptcha.com https://.hcaptcha.com
+frame-src should include https://hcaptcha.com https://.hcaptcha.com
+style-src should include https://hcaptcha.com https://*.hcaptcha.com
+```
 
 ## Translations
 This plugin has been translated into the following languages:
@@ -46,12 +59,13 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
-Next release
+13-Oct-2020 : v1.3.0
 <ul>
+<li>$ Changed Language Labels to follow the convention used in the Joomla 4 PR</li>
 <li>$ Improved Polish pl-PL language File (@mhajder)</li>
 <li>$ Added Spanish es-ES language File (@pe7er)</li>
-<li># corrected minimum check to PHP 7.1 (@zero-24)</li>
-<li># changed file_get_contents to HttpFactory (@zero-24)</li>
+<li># Corrected minimum check to PHP 7.1 (@zero-24)</li>
+<li># Changed file_get_contents to HttpFactory (@zero-24)</li>
 </ul>
 
 22-Apr-2020 : v1.2.0

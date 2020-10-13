@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.9" type="plugin" group="captcha" method="upgrade">
 	<name>plg_captcha_hcaptcha</name>
-	<version>1.0.0</version>
-	<creationDate>April 2020</creationDate>
+	<version>1.3.0</version>
+	<creationDate>October 2020</creationDate>
 	<author>data2site</author>
 	<authorEmail>support@data2site.com</authorEmail>
 	<authorUrl>https://data2site.com</authorUrl>
-	<copyright>Copyright (C) 2020 by data2site. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2020 by data2site.com. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
@@ -21,8 +21,8 @@
 				<field
 					name="publicKey"
 					type="text"
-					label="PLG_HCAPTCHA_PUBLIC_KEY"
-					description="PLG_HCAPTCHA_PUBLIC_KEY_DESC"
+					label="PLG_CAPTCHA_HCAPTCHA_PUBLIC_KEY"
+					description="PLG_CAPTCHA_HCAPTCHA_PUBLIC_KEY_DESC"
 					default=""
 					required="true"
 					filter="string"
@@ -33,8 +33,8 @@
 				<field
 					name="privateKey"
 					type="text"
-					label="PLG_HCAPTCHA_PRIVATE_KEY"
-					description="PLG_HCAPTCHA_PRIVATE_KEY_DESC"
+					label="PLG_CAPTCHA_HCAPTCHA_PRIVATE_KEY"
+					description="PLG_CAPTCHA_HCAPTCHA_PRIVATE_KEY_DESC"
 					default=""
 					required="true"
 					filter="string"
@@ -45,25 +45,25 @@
 				<field
 					name="theme"
 					type="list"
-					label="PLG_HCAPTCHA_THEME"
-					description="PLG_HCAPTCHA_THEME_DESC"
+					label="PLG_CAPTCHA_HCAPTCHA_THEME"
+					description="PLG_CAPTCHA_HCAPTCHA_THEME_DESC"
 					default="light"
-					filter="string"
+					validate="options"
 				>
-					<option value="light">PLG_HCAPTCHA_THEME_LIGHT</option>
-					<option value="dark">PLG_HCAPTCHA_THEME_DARK</option>
+					<option value="light">PLG_CAPTCHA_HCAPTCHA_THEME_LIGHT</option>
+					<option value="dark">PLG_CAPTCHA_HCAPTCHA_THEME_DARK</option>
 				</field>
 
 				<field
 					name="size"
 					type="list"
-					label="PLG_HCAPTCHA_SIZE"
-					description="PLG_HCAPTCHA_SIZE_DESC"
+					label="PLG_CAPTCHA_HCAPTCHA_SIZE"
+					description="PLG_CAPTCHA_HCAPTCHA_SIZE_DESC"
 					default="normal"
-					filter="string"
+					validate="options"
 				>
-					<option value="normal">PLG_HCAPTCHA_SIZE_NORMAL</option>
-					<option value="compact">PLG_HCAPTCHA_SIZE_COMPACT</option>
+					<option value="normal">PLG_CAPTCHA_HCAPTCHA_SIZE_NORMAL</option>
+					<option value="compact">PLG_CAPTCHA_HCAPTCHA_SIZE_COMPACT</option>
 				</field>
 
 			</fieldset>

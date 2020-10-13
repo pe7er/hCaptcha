@@ -1,12 +1,12 @@
 <?php
 /**
  * @package     Joomla.Plugin
- * @subpackage  captcha.hcaptcha
+ * @subpackage  Captcha
  *
  * @author      Peter Martin
- * @copyright   Copyright 2016-2017 Peter Martin. All rights reserved.
+ * @copyright   Copyright 2016-2020 Peter Martin. All rights reserved.
  * @license     GNU General Public License version 2 or later
- * @link        https://db8.eu
+ * @link        https://data2site.com
  */
 
 defined('_JEXEC') or die;
@@ -45,11 +45,11 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 	{
 		$this->loadLanguage();
 
-		return array(
-			Text::_('PLG_CAPTCHA_HCAPTCHA') => array(
+		return [
+			Text::_('PLG_CAPTCHA_HCAPTCHA') => [
 				Text::_('PLG_CAPTCHA_HCAPTCHA_PRIVACY_CAPABILITY_IP_ADDRESS'),
-			)
-		);
+			]
+		];
 	}
 
 	/**
@@ -65,7 +65,7 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		// If there is no Public Key set, then this plugin is no use, so exit
 		if ($this->params->get('publicKey', '') === '')
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_NO_PUBLIC_KEY'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_NO_PUBLIC_KEY'));
 		}
 
 		// Load the JavaScript from hCaptcha
@@ -114,21 +114,23 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		$input            = Factory::getApplication()->input;
 		$privateKey       = $this->params->get('privateKey');
 		$remoteIp         = IpHelper::getIp();
-		$hCaptchaResponse = $input->get('h-captcha-response', '', 'cmd');
+		$hCaptchaResponse = $code ?? $input->get('h-captcha-response', '', 'cmd');
 
+		// Check for Private Key
 		if (empty($privateKey))
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_NO_PRIVATE_KEY'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_NO_PRIVATE_KEY'));
 		}
 
+		// Check for IP
 		if (empty($remoteIp))
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_NO_IP'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_NO_IP'));
 		}
 
 		if (empty($hCaptchaResponse))
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_EMPTY_SOLUTION'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_EMPTY_SOLUTION'));
 		}
 
 		try
@@ -141,12 +143,12 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		}
 		catch (RuntimeException $e)
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_CANT_CONNECT_TO_HCAPTCHA_SERVERS'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_CANT_CONNECT_TO_HCAPTCHA_SERVERS'));
 		}
 
-		if ($verifyResponse->code !== 200 || empty($verifyResponse->body))
+		if ($verifyResponse->code !== 200 || $verifyResponse->body === '')
 		{
-			throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_INVALID_RESPONSE'));
+			throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_INVALID_RESPONSE'));
 		}
 
 		$responseData = json_decode($verifyResponse->body);
@@ -156,6 +158,6 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 			return true;
 		}
 
-		throw new \RuntimeException(Text::_('PLG_HCAPTCHA_ERROR_INCORRECT_CAPTCHA'));
+		throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_INCORRECT_CAPTCHA'));
 	}
 }
