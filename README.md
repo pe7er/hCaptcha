@@ -59,8 +59,10 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
-Future : v1.3.1
+11-Nov-2020 : v1.3.1
 <ul>
+<li>$ Added async attribute improvement (@SniperSister) /li>
+<li>$ Changed Update URL</li>
 <li>$ Changed Language Labels to keep the word the same on all places</li>
 </ul>
 
