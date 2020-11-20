@@ -59,6 +59,11 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
+20-Nov-2020 : v1.3.2
+<ul>
+<li># Fixed issue with required Captcha that displayed (optional) (@brianteeman)</li>
+</ul>
+
 11-Nov-2020 : v1.3.1
 <ul>
 <li>$ Added async attribute improvement (@SniperSister)</li>
