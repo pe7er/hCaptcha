@@ -90,7 +90,7 @@ class PlgCaptchaHcaptcha extends CMSPlugin
 		$dom = new \DOMDocument('1.0', 'UTF-8');
 		$ele = $dom->createElement('div');
 		$ele->setAttribute('id', $id);
-		$ele->setAttribute('class', 'h-captcha');
+		$ele->setAttribute('class', 'h-captcha required');
 		$ele->setAttribute('data-sitekey', $this->params->get('publicKey', ''));
 		$ele->setAttribute('data-theme', $this->params->get('theme', 'light'));
 		$ele->setAttribute('data-size', $this->params->get('size', 'normal'));
