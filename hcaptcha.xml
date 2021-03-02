@@ -6,7 +6,7 @@
 	<author>data2site</author>
 	<authorEmail>support@data2site.com</authorEmail>
 	<authorUrl>https://data2site.com</authorUrl>
-	<copyright>Copyright (C) 2020 by data2site.com. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2021 by data2site.com. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>

@@ -4,7 +4,7 @@
  * @subpackage  Captcha
  *
  * @author      Peter Martin
- * @copyright   Copyright 2016-2020 Peter Martin. All rights reserved.
+ * @copyright   Copyright 2016-2021 Peter Martin. All rights reserved.
  * @license     GNU General Public License version 2 or later
  * @link        https://data2site.com
  */
