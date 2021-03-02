@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.9" type="plugin" group="captcha" method="upgrade">
 	<name>plg_captcha_hcaptcha</name>
-	<version>1.3.2</version>
-	<creationDate>November 2020</creationDate>
+	<version>1.3.3</version>
+	<creationDate>March 2021</creationDate>
 	<author>data2site</author>
 	<authorEmail>support@data2site.com</authorEmail>
 	<authorUrl>https://data2site.com</authorUrl>

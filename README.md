@@ -40,13 +40,14 @@ style-src should include https://hcaptcha.com https://*.hcaptcha.com
 ## Translations
 This plugin has been translated into the following languages:
 - Dutch (nl-NL) by Peter Martin ([@pe7er](https://github.com/pe7er))
+- English (en-GB) by Peter Martin ([@pe7er](https://github.com/pe7er))
 - French (fr-FR) by Yannick Berges ([@micker](https://github.com/micker))
 - German (de-DE) by Tobias Zulauf ([@zero-24](https://github.com/zero-24))
-- English (en-GB) by Peter Martin ([@pe7er](https://github.com/pe7er))
 - Polish (pl-PL) by Mateusz Hajder ([@mhajder](https://github.com/mhajder))
 - Spanish (es-ES) by Peter Martin ([@pe7er](https://github.com/pe7er))
+- Turkish (tr-TR) by Mehmet Taş
  
-Would you like to contribute a translation for an additional language?<br> 
+Would you like to contribute a translation for an additional language? 
 Feel free to create a Pull Request against the master branch.
 
 ## Issues
@@ -58,6 +59,11 @@ Would you like to contribute improvements to this code?
 Please submit a pull request with the proposed changes against the master branch.
 
 ## Changelog
+
+2-Mar-2021 : v1.3.3
+<ul>
+<li>$ Added Turkish (tr-TR) language File (Mehmet Taş)</li>
+</ul>
 
 20-Nov-2020 : v1.3.2
 <ul>
