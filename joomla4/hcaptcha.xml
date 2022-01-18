@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="captcha" method="upgrade">
+    <name>plg_captcha_hcaptcha</name>
+    <version>1.4.0</version>
+    <creationDate>January 2022</creationDate>
+    <author>data2site</author>
+    <authorEmail>support@data2site.com</authorEmail>
+    <authorUrl>https://data2site.com</authorUrl>
+    <copyright>Copyright (C) 2021-2022 by data2site.com. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="hcaptcha">hcaptcha.php</filename>
+        <folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field
+                        name="publicKey"
+                        type="text"
+                        label="PLG_CAPTCHA_HCAPTCHA_PUBLIC_KEY"
+                        description="PLG_CAPTCHA_HCAPTCHA_PUBLIC_KEY_DESC"
+                        default=""
+                        required="true"
+                        filter="string"
+                        size="100"
+                        class="input-xxlarge"
+                />
+
+                <field
+                        name="privateKey"
+                        type="text"
+                        label="PLG_CAPTCHA_HCAPTCHA_PRIVATE_KEY"
+                        description="PLG_CAPTCHA_HCAPTCHA_PRIVATE_KEY_DESC"
+                        default=""
+                        required="true"
+                        filter="string"
+                        size="100"
+                        class="input-xxlarge"
+                />
+
+                <field
+                        name="theme"
+                        type="list"
+                        label="PLG_CAPTCHA_HCAPTCHA_THEME"
+                        description="PLG_CAPTCHA_HCAPTCHA_THEME_DESC"
+                        default="light"
+                        validate="options"
+                >
+                    <option value="light">PLG_CAPTCHA_HCAPTCHA_THEME_LIGHT</option>
+                    <option value="dark">PLG_CAPTCHA_HCAPTCHA_THEME_DARK</option>
+                </field>
+
+                <field
+                        name="size"
+                        type="list"
+                        label="PLG_CAPTCHA_HCAPTCHA_SIZE"
+                        description="PLG_CAPTCHA_HCAPTCHA_SIZE_DESC"
+                        default="normal"
+                        validate="options"
+                >
+                    <option value="normal">PLG_CAPTCHA_HCAPTCHA_SIZE_NORMAL</option>
+                    <option value="compact">PLG_CAPTCHA_HCAPTCHA_SIZE_COMPACT</option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="plg_captcha_hcaptcha">https://data2site.com/updates/hcaptcha
+        </server>
+    </updateservers>
+
+</extension>
