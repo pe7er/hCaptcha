@@ -60,6 +60,11 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
+24-Jan-2022 : v1.4.1
+<ul>
+<li># Fixed issue: Language strings are missing #35</li>
+</ul>
+
 18-Jan-2022 : v1.4.0
 <ul>
 <li>$ New Joomla 4 compatible version</li>
