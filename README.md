@@ -60,10 +60,10 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
-24-Jan-2022 : v1.4.2
+18-Feb-2022 : v1.4.2
 <ul>
-<li># Fixed issue: replaced _QQ_ in language strings with \"</li>
-<li># Refactored: removed the language prefix (e.g. en-GB) from the language files</li>
+<li># Fixed issue in J4 version: replaced _QQ_ in language strings with \"</li>
+<li># Refactored J4 version: removed the language prefix (e.g. en-GB) from the language files</li>
 </ul>
 
 24-Jan-2022 : v1.4.1
