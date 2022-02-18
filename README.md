@@ -60,6 +60,12 @@ Please submit a pull request with the proposed changes against the master branch
 
 ## Changelog
 
+24-Jan-2022 : v1.4.2
+<ul>
+<li># Fixed issue: replaced _QQ_ in language strings with \"</li>
+<li># Refactored: removed the language prefix (e.g. en-GB) from the language files</li>
+</ul>
+
 24-Jan-2022 : v1.4.1
 <ul>
 <li># Fixed issue: Language strings are missing #35</li>
