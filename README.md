@@ -9,7 +9,7 @@ The latest version can be downloaded from: https://data2site.com/download/hcaptc
 
 This hCAPTCHA plugin is available in two versions:
 - one version for Joomla 3.8 to 3.10
-- and one version for Joomla 4.
+- and one version for Joomla 4 and 5.
 
 ## Instructions
 
@@ -59,6 +59,11 @@ Would you like to contribute improvements to this code?
 Please submit a pull request with the proposed changes against the master branch.
 
 ## Changelog
+
+10-Jan-2024 : v1.4.3
+<ul>
+<li># Fixed multiple line issue with language files that occurred since Joomla 5.0.1/4.4.1 due to a security fix.</li>
+</ul>
 
 18-Feb-2022 : v1.4.2
 <ul>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="4.0" type="plugin" group="captcha" method="upgrade">
     <name>plg_captcha_hcaptcha</name>
-    <version>1.4.2</version>
-    <creationDate>February 2022</creationDate>
+    <version>1.4.3</version>
+    <creationDate>January 2024</creationDate>
     <author>data2site</author>
     <authorEmail>support@data2site.com</authorEmail>
     <authorUrl>https://data2site.com</authorUrl>
-    <copyright>Copyright (C) 2021-2022 by data2site.com. All rights reserved.</copyright>
+    <copyright>Copyright (C) 2021-2024 by data2site.com. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later</license>
     <description>PLG_CAPTCHA_HCAPTCHA_XML_DESCRIPTION</description>
     <files>
