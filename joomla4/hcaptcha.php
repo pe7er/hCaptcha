@@ -74,10 +74,10 @@ class PlgCaptchaHcaptcha extends CMSPlugin
         if ($this->params->get('publicKey', '') === '') {
             throw new \RuntimeException(Text::_('PLG_CAPTCHA_HCAPTCHA_ERROR_NO_PUBLIC_KEY'));
         }
-
+		$tag = $this->app->getLanguage()->getTag();
         // Load the JavaScript from hCaptcha
         $this->app->getDocument()->getWebAssetManager()
-            ->registerAndUseScript('plg_captcha_hcaptcha.api', 'https://hcaptcha.com/1/api.js', [], ['defer' => true]);
+            ->registerAndUseScript('plg_captcha_hcaptcha.api', 'https://hcaptcha.com/1/api.js?hl='. $tag, [], ['defer' => true]);
 
         return true;
     }
